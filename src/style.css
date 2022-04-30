@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;300;400;700&display=swap');
+
+:root{
+    --color-p: rgb(155, 152, 152);
+    --color-br: hsla(215, 19%, 26%, 0.4);
+    --color-orange: hsl(25, 97%, 53%);
+    --bgContainer: hsl(213, 19%, 18%);
+    --sizeP: .93rem;
+    --Very-Dark: hsl(216, 12%, 8%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding: 1.5rem;
+    background-color: var(--Very-Dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-rating{
+    padding: 1.5rem 1rem;
+    background-color: var(--bgContainer);
+    border-radius: 1.20rem;
+}
+
+.icon-star{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: .15rem;
+    margin-bottom: 1.25rem;
+    background-color: var(--color-br);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+
+.icon-star img{
+    width: .9rem;
+}
+
+.descripc{
+    margin-top: .63rem;
+}
+
+.descripc h2{
+    font-weight:700;
+    color: var(--White);
+}
+
+.descripc p{
+    margin: .63rem 0 2.8rem 0;
+    line-height: 1.5;
+    font-size: var(--sizeP);
+    font-weight: 400;
+    color: var(--color-p) 
+    
+}
+
+.raiting{
+    margin: 0 0 .9rem 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.quali{
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: var(--color-br);
+    color: var(--color-p); 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.quali:hover{
+    background-color: var(--color-orange);
+    cursor: pointer;
+}
+
+.quali-active{
+    background-color: rgb(163, 162, 162);
+    color: black;
+}
+button{
+    width: 100%;
+    padding: .9rem;
+    margin-bottom: .2rem;
+    background-color: var(--color-orange);
+    color: white;
+    border-radius: 1.3rem;
+    border: none;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+button:hover{
+    color: var(--color-orange);
+    background-color: white;
+    cursor: pointer;
+}
+button:focus{
+    color: blue;
+    background-color: white;
+    cursor: pointer;
+}
+
+.form-none{
+    display: none;
+}
+
+
+
+
+.thank{
+    padding: 1.88rem 1rem;
+    display: none;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.icon-star1{
+    width: 9rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-star1 img{
+    width: 100%;
+    height: 6rem;
+}
+
+.thank h3{
+    margin: 0.8rem 0 .6rem 0;
+    padding: .5rem .7rem;
+    background-color: var(--color-br);
+    color: var(--color-orange);
+    border-radius: 1.25rem;
+    font-size: .9rem;
+    font-weight: 400;
+
+}
+
+.thank h2{
+    margin: 0rem 0 .63rem 0;
+    color: white;
+}
+
+.thank p{
+    margin-top: -1rem;
+    margin-bottom: .5rem;
+    line-height: 1.4;
+    text-align: center;
+    font-size: var(--sizeP);
+    font-weight: 400;
+    color: var(--color-p);
+}
+
+
+@media (min-width: 768px){
+    
+    .cont-rating{
+        width: 23rem;
+        padding: 1rem;
+    }
+    
+    .icon-star{
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: .8rem;
+    }
+    
+    
+    
+    .icon-star img{
+        width: .8rem;
+    }
+    
+
+    
+    .descripc p{
+         margin: .63rem 0 1rem 0;       
+    }
+    
+    
+    .quali{
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 1rem;
+        font-size: .8rem;
+    }
+    
+
+    button{
+        padding: .8rem;
+        font-size: .8rem;
+    }
+    
+    
+    
+    
+    .thank{
+        padding: 2.5rem;
+        gap: 1.5rem;
+    
+    }
+
+    
+    .thank h3{
+        margin: 0;
+        padding: .4rem .7rem;
+        font-size: .8rem;
+    
+    }
+    
+    .thank h2{
+        margin: 0;
+        color: white;
+    }
+    
+    .thank p{
+        text-align: center;
+        font-size: .77rem;
+        color: var(--color-p);
+        margin-bottom: 0;
+    }
+    
+}
